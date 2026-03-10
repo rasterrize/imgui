@@ -42,7 +42,7 @@ if(IMGUI_USE_BACKEND_OPENGL3)
 endif()
 
 if(IMGUI_USE_BACKEND_VULKAN)
-    find_package(Vulkan REQUIRED)
+    find_package(Vulkan REQUIRED COMPONENTS volk)
 
     target_sources(imgui PRIVATE
         backends/imgui_impl_vulkan.h
