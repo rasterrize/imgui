@@ -9,7 +9,7 @@ option(IMGUI_USE_BACKEND_VULKAN "Use the Vulkan backend" FALSE)
 option(IMGUI_USE_STDLIB "Use support for C++ std types" FALSE)
 
 # ImGui defaults to a filename of <volk.h>, but VulkanSDK has the header file under a volk subdirectory
-set(IMGUI_VOLK_FILENAME <volk/volk.h>)
+set(IMGUI_VOLK_FILENAME <volk/volk.h> CACHE STRING "")
 
 add_library(imgui STATIC
     imgui.h
